@@ -1,6 +1,8 @@
 import { test, expect } from "@playwright/test";
 import { LoginPage } from "../../page-objects/saucedemo/LoginPage";
+
 test.describe("SauceDemo Login Tests", () => {
+
   test("successful login with standard user", async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
@@ -8,6 +10,7 @@ test.describe("SauceDemo Login Tests", () => {
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
     await expect(page.locator(".title")).toHaveText("Products");
   });
+
   test("login fails with invalid credentials", async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
@@ -17,6 +20,7 @@ test.describe("SauceDemo Login Tests", () => {
     const errorText = await loginPage.getErrorMessage();
     expect(errorText).toContain("Username and password do not match");
   });
+
   test("login fails with locked out user", async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
@@ -24,6 +28,7 @@ test.describe("SauceDemo Login Tests", () => {
     const errorText = await loginPage.getErrorMessage();
     expect(errorText).toContain("Sorry, this user has been locked out");
   });
+  
   test("can clear error message", async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
