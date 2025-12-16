@@ -1,2 +1,77 @@
-import {Page,Locator} from '@playwright/test';
+import { Page, Locator } from "@playwright/test";
 
+export class ProductPage {
+    readonly page: Page;
+    readonly pageTitle: Locator;
+    readonly inventoryItems: Locator;
+    readonly shoppingCartBadge: Locator;
+    readonly shoppingCartLink: Locator;
+    readonly sortDropdown: Locator;
+
+    constructor(page: Page) {
+        this.page = page;
+        this.pageTitle = page.getByTestId("title");
+        this.inventoryItems = page.getByTestId("inventory-item");
+        this.shoppingCartBadge = page.locator('.shopping_cart_badge');
+        this.shoppingCartLink = page.getByTestId("shopping-cart-link");
+        this.sortDropdown = page.getByTestId("product-sort-container");
+    }
+
+    async goto() {
+        await this.page.goto("https://www.saucedemo.com/inventory.html");
+    }
+
+    async getProductCount(): Promise<number> {
+        return await this.inventoryItems.count();
+    }
+
+    async getProductNames(): Promise<string[]> {
+        const items = await this.inventoryItems.all();
+        const names: string[] = [];
+
+        for (const item of items) {
+            const name = await item.locator(".inventory_item_name").textContent();
+            if (name) names.push(name);
+        }
+        return names;
+    }
+
+    async addProductToCartByName(productName: string) {
+        const product = this.page.locator(".inentory_item", { hasText: productName });
+        await product.locator('button:has-text("Add to cart)').click();
+    }
+
+    async removeProductFromCartByName(productName: string) {
+        const product = this.page.locator('.inventory_item', { hasText: productName });
+        await product.locator('button:has-text("Remove")').click();
+    }
+
+    async getCartItemCount(): Promise<string> {
+        try {
+            return await this.shoppingCartBadge.textContent() || '0';
+        } catch {
+            return '0';
+        }
+    }
+
+    async clickShoppingCart() {
+        await this.shoppingCartLink.click();
+    }
+
+    async sortBy(option: string) {
+        await this.sortDropdown.selectOption(option);
+    }
+
+    async getProductPrice(productName: string): Promise<string> {
+        const product = this.page.locator('.inventory_item', { hasText: productName });
+        return await product.locator('.inventory_item_price').textContent() || '';
+    }
+    
+    async isProductInCart(productName: string): Promise<boolean> {
+        const product = this.page.locator('.inventory_item', { hasText: productName });
+        const removeButton = product.locator('button:has-text("Remove")');
+        return await removeButton.isVisible();
+    }
+}
+
+}
