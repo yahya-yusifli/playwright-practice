@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../../page-objects/saucedemo/LoginPage';
-import { ProductPage } from '../../page-objects/saucedemo/ProductsPage';
+import { ProductsPage } from '../../page-objects/saucedemo/ProductsPage';
 
 test.describe('SauceDemo Products Test', () => {
 
@@ -11,13 +11,13 @@ test.describe('SauceDemo Products Test', () => {
     });
 
     test('display all products', async ({ page }) => {
-        const productPage = new ProductPage(page);
+        const productPage = new ProductsPage(page);
         const productCount = await productPage.getProductCount();
         expect(productCount).toBe(6);
     });
 
     test('can add product to cart', async ({ page }) => {
-        const productPage = new ProductPage(page);
+        const productPage = new ProductsPage(page);
 
         await productPage.addProductToCartByName('Sauce Labs Backpack');
 
@@ -29,7 +29,7 @@ test.describe('SauceDemo Products Test', () => {
     });
 
     test('can add multiple products to cart', async ({ page }) => {
-        const productPage = new ProductPage(page);
+        const productPage = new ProductsPage(page);
 
         await productPage.addProductToCartByName('Sauce Labs Backpack');
         await productPage.addProductToCartByName('Sauce Labs Bike Light');
@@ -39,7 +39,7 @@ test.describe('SauceDemo Products Test', () => {
     });
 
     test('can remove product from cart', async ({ page }) => {
-        const productPage = new ProductPage(page);
+        const productPage = new ProductsPage(page);
 
         await productPage.addProductToCartByName('Sauce Labs Backpack');
         await productPage.removeProductFromCartByName('Sauce Labs Backpack');
@@ -49,7 +49,7 @@ test.describe('SauceDemo Products Test', () => {
     });
 
     test('can sort products by name A-Z', async ({ page }) => {
-        const productPage = new ProductPage(page);
+        const productPage = new ProductsPage(page);
 
         await productPage.sortBy('az');
         const productNames = await productPage.getProductNames();
@@ -57,7 +57,7 @@ test.describe('SauceDemo Products Test', () => {
     });
 
     test('can sort products by price low to high', async ({ page }) => {
-        const productPage = new ProductPage(page);
+        const productPage = new ProductsPage(page);
 
         await productPage.sortBy('lohi');
 

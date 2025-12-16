@@ -1,6 +1,6 @@
 import { Page, Locator } from "@playwright/test";
 
-export class ProductPage {
+export class ProductsPage {
     readonly page: Page;
     readonly pageTitle: Locator;
     readonly inventoryItems: Locator;
@@ -13,7 +13,7 @@ export class ProductPage {
         this.pageTitle = page.getByTestId("title");
         this.inventoryItems = page.locator(".inventory_item");
         this.shoppingCartBadge = page.locator('.shopping_cart_badge');
-        this.shoppingCartLink = page.getByTestId("shopping-cart-link");
+        this.shoppingCartLink = page.locator("[data-test=shopping-cart-link]");
         this.sortDropdown = page.locator('[data-test="product-sort-container"]');
     }
 
