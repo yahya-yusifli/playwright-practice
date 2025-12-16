@@ -127,20 +127,20 @@
   },
   "suites": [
     {
-      "title": "saucedemo/login.spec.ts",
-      "file": "saucedemo/login.spec.ts",
+      "title": "saucedemo/product.spec.ts",
+      "file": "saucedemo/product.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "SauceDemo Login Tests",
-          "file": "saucedemo/login.spec.ts",
-          "line": 3,
+          "title": "SauceDemo Products Test",
+          "file": "saucedemo/product.spec.ts",
+          "line": 5,
           "column": 6,
           "specs": [
             {
-              "title": "successful login with standard user",
+              "title": "display all products",
               "ok": true,
               "tags": [],
               "tests": [
@@ -155,12 +155,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1263,
+                      "duration": 540,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:48.698Z",
+                      "startTime": "2025-12-16T05:00:19.023Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -168,13 +168,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-067f6195c03f6436481e",
-              "file": "saucedemo/login.spec.ts",
-              "line": 4,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-55d3f01d8c773dd9ab5c",
+              "file": "saucedemo/product.spec.ts",
+              "line": 13,
+              "column": 9
             },
             {
-              "title": "login fails with invalid credentials",
+              "title": "can add product to cart",
               "ok": true,
               "tags": [],
               "tests": [
@@ -189,12 +189,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1250,
+                      "duration": 556,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:48.703Z",
+                      "startTime": "2025-12-16T05:00:19.023Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -202,13 +202,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-bb865ae7c09c57d974f4",
-              "file": "saucedemo/login.spec.ts",
-              "line": 11,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-ba5b582175d932d8b3de",
+              "file": "saucedemo/product.spec.ts",
+              "line": 19,
+              "column": 9
             },
             {
-              "title": "login fails with locked out user",
+              "title": "display all products",
               "ok": true,
               "tags": [],
               "tests": [
@@ -216,19 +216,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
                   "results": [
                     {
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 1157,
+                      "duration": 1216,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:48.703Z",
+                      "startTime": "2025-12-16T05:00:19.031Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -236,13 +236,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-d467ca24649c6424b5b5",
-              "file": "saucedemo/login.spec.ts",
-              "line": 20,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-c26ecfe7256b9a452189",
+              "file": "saucedemo/product.spec.ts",
+              "line": 13,
+              "column": 9
             },
             {
-              "title": "can clear error message",
+              "title": "can add product to cart",
               "ok": true,
               "tags": [],
               "tests": [
@@ -250,19 +250,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
                   "results": [
                     {
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 1187,
+                      "duration": 1314,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:48.702Z",
+                      "startTime": "2025-12-16T05:00:19.011Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -270,13 +270,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-bb34d43bce436dd7918b",
-              "file": "saucedemo/login.spec.ts",
-              "line": 27,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-91f19326771de9252bb2",
+              "file": "saucedemo/product.spec.ts",
+              "line": 19,
+              "column": 9
             },
             {
-              "title": "successful login with standard user",
+              "title": "display all products",
               "ok": true,
               "tags": [],
               "tests": [
@@ -284,19 +284,53 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 723,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-12-16T05:00:19.024Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "90e70ccaede511eee8ad-e861e87adbac9e734cfa",
+              "file": "saucedemo/product.spec.ts",
+              "line": 13,
+              "column": 9
+            },
+            {
+              "title": "can add product to cart",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
                   "results": [
                     {
                       "workerIndex": 5,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 1294,
+                      "duration": 814,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:48.705Z",
+                      "startTime": "2025-12-16T05:00:19.023Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -304,13 +338,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-d594af01fe7dca38c850",
-              "file": "saucedemo/login.spec.ts",
-              "line": 4,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-8fafeaadfc727c7e4b08",
+              "file": "saucedemo/product.spec.ts",
+              "line": 19,
+              "column": 9
             },
             {
-              "title": "login fails with invalid credentials",
+              "title": "display all products",
               "ok": true,
               "tags": [],
               "tests": [
@@ -318,19 +352,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1418,
+                      "duration": 641,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:50.787Z",
+                      "startTime": "2025-12-16T05:00:20.154Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -338,13 +372,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-aecd96e2e44f60968a25",
-              "file": "saucedemo/login.spec.ts",
-              "line": 11,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-a91ee0bc99193313ceaf",
+              "file": "saucedemo/product.spec.ts",
+              "line": 13,
+              "column": 9
             },
             {
-              "title": "login fails with locked out user",
+              "title": "can add product to cart",
               "ok": true,
               "tags": [],
               "tests": [
@@ -352,19 +386,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
                       "workerIndex": 7,
-                      "parallelIndex": 3,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 1267,
+                      "duration": 676,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:50.788Z",
+                      "startTime": "2025-12-16T05:00:20.184Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -372,13 +406,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-52e3d41481b28862d984",
-              "file": "saucedemo/login.spec.ts",
-              "line": 20,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-0cecf1a70a6ee829db32",
+              "file": "saucedemo/product.spec.ts",
+              "line": 19,
+              "column": 9
             },
             {
-              "title": "can clear error message",
+              "title": "display all products",
               "ok": true,
               "tags": [],
               "tests": [
@@ -386,19 +420,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
                   "results": [
                     {
                       "workerIndex": 8,
                       "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 1763,
+                      "duration": 734,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:50.841Z",
+                      "startTime": "2025-12-16T05:00:20.315Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -406,13 +440,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-d645b69a667711a1b01b",
-              "file": "saucedemo/login.spec.ts",
-              "line": 27,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-6621da0ff036995dc13e",
+              "file": "saucedemo/product.spec.ts",
+              "line": 13,
+              "column": 9
             },
             {
-              "title": "successful login with standard user",
+              "title": "can add product to cart",
               "ok": true,
               "tags": [],
               "tests": [
@@ -420,53 +454,19 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
                   "results": [
                     {
                       "workerIndex": 9,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 956,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:50.839Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-012257fc2190b6a28162",
-              "file": "saucedemo/login.spec.ts",
-              "line": 4,
-              "column": 7
-            },
-            {
-              "title": "login fails with invalid credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 11,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 736,
+                      "duration": 743,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T00:28:51.370Z",
+                      "startTime": "2025-12-16T05:00:20.405Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -474,539 +474,21 @@
                   "status": "expected"
                 }
               ],
-              "id": "87a74ef46e8bd881bda8-017bebe98a39aae88453",
-              "file": "saucedemo/login.spec.ts",
-              "line": 11,
-              "column": 7
-            },
-            {
-              "title": "login fails with locked out user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 604,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:52.015Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-0ed6435b178ae0cc5930",
-              "file": "saucedemo/login.spec.ts",
-              "line": 20,
-              "column": 7
-            },
-            {
-              "title": "can clear error message",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 619,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:52.292Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-2ca94607aff4d77b643e",
-              "file": "saucedemo/login.spec.ts",
-              "line": 27,
-              "column": 7
-            },
-            {
-              "title": "successful login with standard user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 960,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:53.196Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-c4669883551b830af0eb",
-              "file": "saucedemo/login.spec.ts",
-              "line": 4,
-              "column": 7
-            },
-            {
-              "title": "login fails with invalid credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 997,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:53.314Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-bf9c2422ffe164a6042c",
-              "file": "saucedemo/login.spec.ts",
-              "line": 11,
-              "column": 7
-            },
-            {
-              "title": "login fails with locked out user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 15,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 944,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:54.153Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-993cf16dd6e8e1c5ede3",
-              "file": "saucedemo/login.spec.ts",
-              "line": 20,
-              "column": 7
-            },
-            {
-              "title": "can clear error message",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 16,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 902,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:54.389Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-6d00167db8a0a69e2b51",
-              "file": "saucedemo/login.spec.ts",
-              "line": 27,
-              "column": 7
-            },
-            {
-              "title": "successful login with standard user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 18,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 803,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:55.326Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-34f7472e9be4c47546b5",
-              "file": "saucedemo/login.spec.ts",
-              "line": 4,
-              "column": 7
-            },
-            {
-              "title": "login fails with invalid credentials",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 17,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 773,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:55.230Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-9132b1e6dc84c11e9df2",
-              "file": "saucedemo/login.spec.ts",
-              "line": 11,
-              "column": 7
-            },
-            {
-              "title": "login fails with locked out user",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 19,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 819,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:55.332Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-17e9ee73726f8b54ce97",
-              "file": "saucedemo/login.spec.ts",
-              "line": 20,
-              "column": 7
-            },
-            {
-              "title": "can clear error message",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 20,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 643,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T00:28:56.073Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "87a74ef46e8bd881bda8-51d44041a8cdee029f43",
-              "file": "saucedemo/login.spec.ts",
-              "line": 27,
-              "column": 7
+              "id": "90e70ccaede511eee8ad-e1bcbc045f99736b1168",
+              "file": "saucedemo/product.spec.ts",
+              "line": 19,
+              "column": 9
             }
           ]
-        }
-      ]
-    },
-    {
-      "title": "saucedemo-login.spec.ts",
-      "file": "saucedemo-login.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [
-        {
-          "title": "login to Sauce Demo",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "parallelIndex": 4,
-                  "status": "passed",
-                  "duration": 1231,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-12-16T00:28:48.708Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d900de64a91b3c9fcd38-617daefda7d027b09780",
-          "file": "saucedemo-login.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "login to Sauce Demo",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 10,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 1256,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-12-16T00:28:50.839Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d900de64a91b3c9fcd38-5fd9e5b23bf3c710d33e",
-          "file": "saucedemo-login.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "login to Sauce Demo",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 14,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 835,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-12-16T00:28:53.873Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d900de64a91b3c9fcd38-ae5cff229e220c18efbd",
-          "file": "saucedemo-login.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "login to Sauce Demo",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Mobile Chrome",
-              "projectName": "Mobile Chrome",
-              "results": [
-                {
-                  "workerIndex": 12,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 1007,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-12-16T00:28:54.456Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d900de64a91b3c9fcd38-bc5e81d86fb3ef975aa9",
-          "file": "saucedemo-login.spec.ts",
-          "line": 3,
-          "column": 5
-        },
-        {
-          "title": "login to Sauce Demo",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "Mobile Safari",
-              "projectName": "Mobile Safari",
-              "results": [
-                {
-                  "workerIndex": 21,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 671,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-12-16T00:28:56.099Z",
-                  "annotations": [],
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "d900de64a91b3c9fcd38-41e12b1cfe527c793a2c",
-          "file": "saucedemo-login.spec.ts",
-          "line": 3,
-          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-16T00:28:48.361Z",
-    "duration": 8684.737000000001,
-    "expected": 25,
+    "startTime": "2025-12-16T05:00:18.682Z",
+    "duration": 2997.2200000000003,
+    "expected": 10,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

@@ -20,7 +20,7 @@ dotenv.config();
     },
     use: {
       baseURL: process.env.BASE_URL,
-      headless : true,
+      headless : false,
       trace: "on-first-retry",
       screenshot: "only-on-failure",
       video: "retain-on-failure",

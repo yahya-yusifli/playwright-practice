@@ -11,7 +11,7 @@ export class ProductPage {
     constructor(page: Page) {
         this.page = page;
         this.pageTitle = page.getByTestId("title");
-        this.inventoryItems = page.getByTestId("inventory-item");
+        this.inventoryItems = page.locator(".inventory_item");
         this.shoppingCartBadge = page.locator('.shopping_cart_badge');
         this.shoppingCartLink = page.getByTestId("shopping-cart-link");
         this.sortDropdown = page.getByTestId("product-sort-container");
@@ -37,8 +37,8 @@ export class ProductPage {
     }
 
     async addProductToCartByName(productName: string) {
-        const product = this.page.locator(".inentory_item", { hasText: productName });
-        await product.locator('button:has-text("Add to cart)').click();
+        const product = this.page.locator(".inventory_item", { hasText: productName });
+        await product.locator('button:has-text("Add to cart")').click();
     }
 
     async removeProductFromCartByName(productName: string) {
@@ -66,12 +66,11 @@ export class ProductPage {
         const product = this.page.locator('.inventory_item', { hasText: productName });
         return await product.locator('.inventory_item_price').textContent() || '';
     }
-    
+
     async isProductInCart(productName: string): Promise<boolean> {
         const product = this.page.locator('.inventory_item', { hasText: productName });
         const removeButton = product.locator('button:has-text("Remove")');
         return await removeButton.isVisible();
     }
-}
+};
 
-}
