@@ -28,6 +28,42 @@ test.describe('SauceDemo Products Test', () => {
         expect(isInCart).toBeTruthy();
     });
 
+    test('can add multiple products to cart', async ({ page }) => {
+        const productPage = new ProductPage(page);
+
+        await productPage.addProductToCartByName('Sauce Labs Backpack');
+        await productPage.addProductToCartByName('Sauce Labs Bike Light');
+
+        const cartCount = await productPage.getCartItemCount();
+        expect(cartCount).toBe('2');
+    });
+
+    test('can remove product from cart', async ({ page }) => {
+        const productPage = new ProductPage(page);
+
+        await productPage.addProductToCartByName('Sauce Labs Backpack');
+        await productPage.removeProductFromCartByName('Sauce Labs Backpack');
+
+        const cartCount = await productPage.getCartItemCount();
+        expect(cartCount).toBe('0');;
+    });
+
+    test('can sort products by name A-Z', async ({ page }) => {
+        const productPage = new ProductPage(page);
+
+        await productPage.sortBy('az');
+        const productNames = await productPage.getProductNames();
+        expect(productNames[0]).toBe('Sauce Labs Backpack')
+    });
+
+    test('can sort products by price low to high', async ({ page }) => {
+        const productPage = new ProductPage(page);
+
+        await productPage.sortBy('lohi');
+
+        const firstProductPrice = await productPage.getProductPrice('Sauce Labs Onesie');
+        expect(firstProductPrice).toBe('$7.99');
+    });
 
 
 });

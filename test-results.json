@@ -9,9 +9,9 @@
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 0,
+    "maxFailures": 1,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +41,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -50,14 +50,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -66,14 +66,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "webkit",
         "name": "webkit",
@@ -82,14 +82,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
@@ -98,14 +98,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "Mobile Safari",
         "name": "Mobile Safari",
@@ -114,7 +114,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       }
     ],
     "shard": null,
@@ -122,7 +122,7 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 6,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
@@ -140,12 +140,12 @@
           "column": 6,
           "specs": [
             {
-              "title": "display all products",
+              "title": "can sort products by price low to high",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -155,12 +155,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 540,
+                      "duration": 23545,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T05:00:19.023Z",
+                      "startTime": "2025-12-16T16:58:29.105Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -168,33 +168,33 @@
                   "status": "expected"
                 }
               ],
-              "id": "90e70ccaede511eee8ad-55d3f01d8c773dd9ab5c",
+              "id": "90e70ccaede511eee8ad-c1465ea8407e7976a685",
               "file": "saucedemo/product.spec.ts",
-              "line": 13,
+              "line": 59,
               "column": 9
             },
             {
-              "title": "can add product to cart",
+              "title": "can sort products by price low to high",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
                   "results": [
                     {
                       "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 556,
+                      "duration": 11235,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T05:00:19.023Z",
+                      "startTime": "2025-12-16T16:58:53.263Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -202,33 +202,33 @@
                   "status": "expected"
                 }
               ],
-              "id": "90e70ccaede511eee8ad-ba5b582175d932d8b3de",
+              "id": "90e70ccaede511eee8ad-a744ecdc3aeae4d195a4",
               "file": "saucedemo/product.spec.ts",
-              "line": 19,
+              "line": 59,
               "column": 9
             },
             {
-              "title": "display all products",
+              "title": "can sort products by price low to high",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
                   "results": [
                     {
                       "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1216,
+                      "duration": 3990,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T05:00:19.031Z",
+                      "startTime": "2025-12-16T16:59:05.506Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -236,33 +236,33 @@
                   "status": "expected"
                 }
               ],
-              "id": "90e70ccaede511eee8ad-c26ecfe7256b9a452189",
+              "id": "90e70ccaede511eee8ad-e8b0790a510b805acf34",
               "file": "saucedemo/product.spec.ts",
-              "line": 13,
+              "line": 59,
               "column": 9
             },
             {
-              "title": "can add product to cart",
+              "title": "can sort products by price low to high",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
                       "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1314,
+                      "duration": 15105,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T05:00:19.011Z",
+                      "startTime": "2025-12-16T16:59:09.925Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -270,101 +270,33 @@
                   "status": "expected"
                 }
               ],
-              "id": "90e70ccaede511eee8ad-91f19326771de9252bb2",
+              "id": "90e70ccaede511eee8ad-31d19b390c010bdae5bd",
               "file": "saucedemo/product.spec.ts",
-              "line": 19,
+              "line": 59,
               "column": 9
             },
             {
-              "title": "display all products",
+              "title": "can sort products by price low to high",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 723,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T05:00:19.024Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "90e70ccaede511eee8ad-e861e87adbac9e734cfa",
-              "file": "saucedemo/product.spec.ts",
-              "line": 13,
-              "column": 9
-            },
-            {
-              "title": "can add product to cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 814,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T05:00:19.023Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "90e70ccaede511eee8ad-8fafeaadfc727c7e4b08",
-              "file": "saucedemo/product.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "display all products",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 6,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 641,
+                      "duration": 15905,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T05:00:20.154Z",
+                      "startTime": "2025-12-16T16:59:25.564Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -372,111 +304,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "90e70ccaede511eee8ad-a91ee0bc99193313ceaf",
+              "id": "90e70ccaede511eee8ad-30aba0930a8423e5eb7e",
               "file": "saucedemo/product.spec.ts",
-              "line": 13,
-              "column": 9
-            },
-            {
-              "title": "can add product to cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 676,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T05:00:20.184Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "90e70ccaede511eee8ad-0cecf1a70a6ee829db32",
-              "file": "saucedemo/product.spec.ts",
-              "line": 19,
-              "column": 9
-            },
-            {
-              "title": "display all products",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 734,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T05:00:20.315Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "90e70ccaede511eee8ad-6621da0ff036995dc13e",
-              "file": "saucedemo/product.spec.ts",
-              "line": 13,
-              "column": 9
-            },
-            {
-              "title": "can add product to cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 743,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T05:00:20.405Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "90e70ccaede511eee8ad-e1bcbc045f99736b1168",
-              "file": "saucedemo/product.spec.ts",
-              "line": 19,
+              "line": 59,
               "column": 9
             }
           ]
@@ -486,9 +316,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-16T05:00:18.682Z",
-    "duration": 2997.2200000000003,
-    "expected": 10,
+    "startTime": "2025-12-16T16:58:28.866Z",
+    "duration": 72789.978,
+    "expected": 5,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

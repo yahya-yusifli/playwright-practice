@@ -6,7 +6,7 @@ test.describe("SauceDemo Login Tests", () => {
   test("successful login with standard user", async ({ page }) => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
-    await loginPage.login("standard_user", "secret_sauce");
+    await loginPage.login(process.env.SAUCE_USERNAME!, process.env.SAUCE_PASSWORD!);
     await expect(page).toHaveURL("https://www.saucedemo.com/inventory.html");
     await expect(page.locator(".title")).toHaveText("Products");
   });
