@@ -4,8 +4,8 @@ export class BasePage {
     constructor(page: Page) {
         this.page = page;
     }
-    async goto(url: string) {
-        await this.page.goto(process.env.BASE_URL!);
+    async goto(path: string = "") {
+        await this.page.goto(process.env.BASE_URL + path);
     }
     async getTitle(): Promise<string> {
         return await this.page.title();

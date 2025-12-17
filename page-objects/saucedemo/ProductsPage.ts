@@ -1,7 +1,8 @@
 import { Page, Locator } from "@playwright/test";
+import { BasePage } from "../shared/BasePage";
+import { SortOption } from "../../utils/saucedemo-data";
 
-export class ProductsPage {
-    readonly page: Page;
+export class ProductsPage extends BasePage {
     readonly pageTitle: Locator;
     readonly inventoryItems: Locator;
     readonly shoppingCartBadge: Locator;
@@ -9,7 +10,7 @@ export class ProductsPage {
     readonly sortDropdown: Locator;
 
     constructor(page: Page) {
-        this.page = page;
+        super(page);
         this.pageTitle = page.getByTestId("title");
         this.inventoryItems = page.locator(".inventory_item");
         this.shoppingCartBadge = page.locator('.shopping_cart_badge');
@@ -18,18 +19,19 @@ export class ProductsPage {
     }
 
     async goto() {
-        await this.page.goto("https://www.saucedemo.com/inventory.html");
+        await super.goto("/inventory.html");
     }
+    
 
-    async getProductCount(): Promise<number> {
+    async getProductCount(): Promise < number > {
         return await this.inventoryItems.count();
     }
 
-    async getProductNames(): Promise<string[]> {
+    async getProductNames(): Promise < string[] > {
         const items = await this.inventoryItems.all();
         const names: string[] = [];
 
-        for (const item of items) {
+        for(const item of items) {
             const name = await item.locator(".inventory_item_name").textContent();
             if (name) names.push(name);
         }
@@ -46,7 +48,7 @@ export class ProductsPage {
         await product.locator('button:has-text("Remove")').click();
     }
 
-    async getCartItemCount(): Promise<string> {
+    async getCartItemCount(): Promise < string > {
         try {
             return await this.shoppingCartBadge.textContent() || '0';
         } catch {
@@ -58,16 +60,16 @@ export class ProductsPage {
         await this.shoppingCartLink.click();
     }
 
-    async sortBy(option: string) {
+    async sortBy(option: SortOption) {
         await this.sortDropdown.selectOption(option);
     }
 
-    async getProductPrice(productName: string): Promise<string> {
+    async getProductPrice(productName: string): Promise < string > {
         const product = this.page.locator('.inventory_item', { hasText: productName });
         return await product.locator('.inventory_item_price').textContent() || '';
     }
 
-    async isProductInCart(productName: string): Promise<boolean> {
+    async isProductInCart(productName: string): Promise < boolean > {
         const product = this.page.locator('.inventory_item', { hasText: productName });
         const removeButton = product.locator('button:has-text("Remove")');
         return await removeButton.isVisible();

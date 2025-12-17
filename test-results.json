@@ -9,9 +9,9 @@
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 0,
+    "maxFailures": 1,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +41,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
@@ -50,14 +50,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
@@ -66,14 +66,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "webkit",
         "name": "webkit",
@@ -82,14 +82,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
@@ -98,14 +98,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "Mobile Safari",
         "name": "Mobile Safari",
@@ -114,7 +114,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 0
       }
     ],
     "shard": null,
@@ -122,30 +122,30 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 6,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "saucedemo/e2e-checkout.spec.ts",
-      "file": "saucedemo/e2e-checkout.spec.ts",
+      "title": "saucedemo/checkout-flow.spec.ts",
+      "file": "saucedemo/checkout-flow.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [],
       "suites": [
         {
-          "title": "SauceDemo End-to-End Checkout FLow",
-          "file": "saucedemo/e2e-checkout.spec.ts",
-          "line": 7,
+          "title": "SauceDemo Checkout Flow (Faker Data)",
+          "file": "saucedemo/checkout-flow.spec.ts",
+          "line": 8,
           "column": 6,
           "specs": [
             {
-              "title": "complete checkout flow with multiple products",
+              "title": "should complete checkout with random user info",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "chromium",
@@ -155,12 +155,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1694,
+                      "duration": 77708,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T19:51:52.407Z",
+                      "startTime": "2025-12-16T22:45:19.681Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -168,33 +168,33 @@
                   "status": "expected"
                 }
               ],
-              "id": "22610a70ea4a9ddfad90-7559304a9a4a0748cfbc",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 9,
+              "id": "585384b9c1b980d73c52-14b333cdd49055e86eb7",
+              "file": "saucedemo/checkout-flow.spec.ts",
+              "line": 10,
               "column": 9
             },
             {
-              "title": "checkout with single product",
+              "title": "should complete checkout with random user info",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
                   "results": [
                     {
                       "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1390,
+                      "duration": 221272,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T19:51:52.405Z",
+                      "startTime": "2025-12-16T22:46:38.017Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -202,33 +202,33 @@
                   "status": "expected"
                 }
               ],
-              "id": "22610a70ea4a9ddfad90-d0953eee648834fb9fed",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 46,
+              "id": "585384b9c1b980d73c52-d1f83f2ef2096efc21be",
+              "file": "saucedemo/checkout-flow.spec.ts",
+              "line": 10,
               "column": 9
             },
             {
-              "title": "cannot checkout with empty cart",
+              "title": "should complete checkout with random user info",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
                   "results": [
                     {
                       "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1292,
+                      "duration": 3532,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T19:51:52.406Z",
+                      "startTime": "2025-12-16T22:50:20.118Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -236,33 +236,33 @@
                   "status": "expected"
                 }
               ],
-              "id": "22610a70ea4a9ddfad90-0ce675eb75da5f565480",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 65,
+              "id": "585384b9c1b980d73c52-42ce39348f409326a726",
+              "file": "saucedemo/checkout-flow.spec.ts",
+              "line": 10,
               "column": 9
             },
             {
-              "title": "complete checkout flow with multiple products",
+              "title": "should complete checkout with random user info",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
                   "results": [
                     {
                       "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 1897,
+                      "duration": 10972,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T19:51:52.407Z",
+                      "startTime": "2025-12-16T22:50:24.128Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -270,383 +270,59 @@
                   "status": "expected"
                 }
               ],
-              "id": "22610a70ea4a9ddfad90-1ccea75ef10b3b6c4e61",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 9,
+              "id": "585384b9c1b980d73c52-087b1e39cba91fd8e8af",
+              "file": "saucedemo/checkout-flow.spec.ts",
+              "line": 10,
               "column": 9
             },
             {
-              "title": "checkout with single product",
+              "title": "should complete checkout with random user info",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 0,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
+                  "projectId": "Mobile Safari",
+                  "projectName": "Mobile Safari",
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 1682,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:52.406Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-1aa275abf341cd13bf3f",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "cannot checkout with empty cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 1379,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:52.406Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-6478444580e4ae6eb10b",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 65,
-              "column": 9
-            },
-            {
-              "title": "complete checkout flow with multiple products",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1429,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:54.681Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-f92c0a7302261174f173",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 9,
-              "column": 9
-            },
-            {
-              "title": "checkout with single product",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1352,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:54.798Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-bd2fc69db55478d2d0b3",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "cannot checkout with empty cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 8,
                       "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 1357,
-                      "errors": [],
+                      "status": "interrupted",
+                      "duration": 3828,
+                      "error": {
+                        "message": "Error: browserContext.close: Target page, context or browser has been closed",
+                        "stack": "Error: browserContext.close: Target page, context or browser has been closed"
+                      },
+                      "errors": [
+                        {
+                          "message": "Error: browserContext.close: Target page, context or browser has been closed"
+                        },
+                        {
+                          "location": {
+                            "file": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/page-objects/shared/BasePage.ts",
+                            "column": 25,
+                            "line": 8
+                          },
+                          "message": "Error: page.goto: Target page, context or browser has been closed\n\n\u001b[90m   at \u001b[39m../page-objects/shared/BasePage.ts:8\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     }\n \u001b[90m  7 |\u001b[39m     \u001b[36masync\u001b[39m goto(path\u001b[33m:\u001b[39m string \u001b[33m=\u001b[39m \u001b[32m\"\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m \u001b[33m+\u001b[39m path)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m     \u001b[36masync\u001b[39m getTitle()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 11 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mtitle()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.goto (/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/page-objects/shared/BasePage.ts:8:25)\u001b[22m\n\u001b[2m    at LoginPage.goto (/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/page-objects/saucedemo/LoginPage.ts:21:17)\u001b[22m\n\u001b[2m    at /Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/tests/saucedemo/checkout-flow.spec.ts:19:25\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-12-16T19:51:55.073Z",
+                      "startTime": "2025-12-16T22:50:35.658Z",
                       "annotations": [],
                       "attachments": []
                     }
                   ],
-                  "status": "expected"
+                  "status": "skipped"
                 }
               ],
-              "id": "22610a70ea4a9ddfad90-07316e0dcd90f72bbcb5",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 65,
-              "column": 9
-            },
-            {
-              "title": "complete checkout flow with multiple products",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 1642,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:55.291Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-9d577f29d2cb980f812b",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 9,
-              "column": 9
-            },
-            {
-              "title": "checkout with single product",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 1411,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:56.298Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-4c68625de2ec0a08137a",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "cannot checkout with empty cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 1137,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:56.736Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-b1ff0bc3c7181c2dc03f",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 65,
-              "column": 9
-            },
-            {
-              "title": "complete checkout flow with multiple products",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 1215,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:56.800Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-c105370405a393072751",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 9,
-              "column": 9
-            },
-            {
-              "title": "checkout with single product",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 1202,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:56.875Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-da52e9f203cfec799ea1",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 46,
-              "column": 9
-            },
-            {
-              "title": "cannot checkout with empty cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 788,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T19:51:57.537Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "22610a70ea4a9ddfad90-e458b1a1db136d6ae023",
-              "file": "saucedemo/e2e-checkout.spec.ts",
-              "line": 65,
+              "id": "585384b9c1b980d73c52-ec7b263749bc5cb6c094",
+              "file": "saucedemo/checkout-flow.spec.ts",
+              "line": 10,
               "column": 9
             }
           ]
@@ -656,10 +332,10 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-16T19:51:52.026Z",
-    "duration": 6532.659,
-    "expected": 15,
-    "skipped": 0,
+    "startTime": "2025-12-16T22:45:19.316Z",
+    "duration": 320301.11600000004,
+    "expected": 4,
+    "skipped": 1,
     "unexpected": 0,
     "flaky": 0
   }

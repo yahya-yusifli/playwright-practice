@@ -1,14 +1,14 @@
 import { Page, Locator } from '@playwright/test';
+import { BasePage } from '../shared/BasePage';
 
-export class CartPage {
-    readonly page: Page;
+export class CartPage extends BasePage {
     readonly pageTitle: Locator;
     readonly cartItems: Locator;
     readonly checkoutButton: Locator;
     readonly continueShoppingButton: Locator;
 
     constructor(page: Page) {
-        this.page = page;
+        super(page);
         this.pageTitle = page.locator('[data-test="title"]');
         this.cartItems = page.locator('[data-test="inventory-item"]');
         this.checkoutButton = page.getByRole('button', { name: 'checkout' });
@@ -16,7 +16,7 @@ export class CartPage {
     }
 
     async goto() {
-        await this.page.goto('https://www.saucedemo.com/cart.html');
+        await super.goto('/cart.html');
     }
 
     async getCartItemCount(): Promise<number> {

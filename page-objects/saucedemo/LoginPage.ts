@@ -1,8 +1,7 @@
 import { Page, Locator } from "@playwright/test";
+import { BasePage } from "../shared/BasePage";
 
-export class LoginPage {
-  
-  readonly page: Page;
+export class LoginPage extends BasePage{  
   readonly usernameInput: Locator;
   readonly passwordInput: Locator;
   readonly loginButton: Locator;
@@ -10,7 +9,7 @@ export class LoginPage {
   readonly errorButton: Locator;
   
   constructor(page: Page) {
-    this.page = page;
+    super(page);
     this.usernameInput = page.locator("#user-name");
     this.passwordInput = page.locator("#password");
     this.loginButton = page.locator("#login-button");
@@ -19,7 +18,7 @@ export class LoginPage {
   }
 
   async goto() {
-    await this.page.goto("/");
+    await super.goto();
   }
 
   async login(username: string, password: string) {

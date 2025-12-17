@@ -1,7 +1,7 @@
 import { Page, Locator } from '@playwright/test';
+import { BasePage } from '../shared/BasePage';
 
-export class CheckoutPage {
-    readonly page: Page;
+export class CheckoutPage extends BasePage{
     readonly firstNameInput: Locator;
     readonly lastNameInput: Locator;
     readonly postalCodeInput: Locator;
@@ -13,7 +13,7 @@ export class CheckoutPage {
     readonly errorMessage: Locator;
 
     constructor(page: Page) {
-        this.page = page;
+        super(page);
         this.firstNameInput = page.locator('#first-name');
         this.lastNameInput = page.locator('#last-name');
         this.postalCodeInput = page.locator('#postal-code');
@@ -23,6 +23,10 @@ export class CheckoutPage {
         this.completeText = page.locator('.complete-text');
         this.backHomeButton = page.locator('#back-to-products');
         this.errorMessage = page.locator('[data-test="error"]');
+    }
+    
+    async goto() {
+        await super.goto('/checkout-step-one.html');
     }
 
     async fillShippingInformation(firstName: string, lastName: string, postalCode: string) {
