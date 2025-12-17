@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../page-objects/saucedemo/LoginPage';
+import { LoginPage } from '../../../page-objects/saucedemo/LoginPage';
 
 const testUsers = [
     { username: 'standard_user', password: 'secret_sauce', shouldSucceed: true },
@@ -8,7 +8,7 @@ const testUsers = [
     { username: 'invalid_user', password: 'wrong_password', shouldSucceed: false }
 ];
 
-test.describe('SueceDemo Login with Multiple Users', () => {
+test.describe('SueceDemo Login with Multiple Users @smoke', () => {
 
     for (const user of testUsers) {
 

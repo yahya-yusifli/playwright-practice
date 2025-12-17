@@ -9,9 +9,9 @@
     "globalTimeout": 0,
     "grep": {},
     "grepInvert": null,
-    "maxFailures": 1,
+    "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "reporter": [
@@ -41,7 +41,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "chromium",
         "name": "chromium",
@@ -50,14 +50,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "firefox",
         "name": "firefox",
@@ -66,14 +66,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "webkit",
         "name": "webkit",
@@ -82,14 +82,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "Mobile Chrome",
         "name": "Mobile Chrome",
@@ -98,14 +98,14 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       },
       {
         "outputDir": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "Mobile Safari",
         "name": "Mobile Safari",
@@ -114,7 +114,7 @@
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 0
+        "timeout": 30000
       }
     ],
     "shard": null,
@@ -122,220 +122,195 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 1,
+    "workers": 6,
     "webServer": null
   },
   "suites": [
     {
-      "title": "saucedemo/checkout-flow.spec.ts",
-      "file": "saucedemo/checkout-flow.spec.ts",
+      "title": "saucedemo/auth-fixtures-test.spec.ts",
+      "file": "saucedemo/auth-fixtures-test.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "SauceDemo Checkout Flow (Faker Data)",
-          "file": "saucedemo/checkout-flow.spec.ts",
-          "line": 8,
-          "column": 6,
-          "specs": [
+          "title": "add product with login",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "should complete checkout with random user info",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
                 {
-                  "timeout": 0,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1027,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-17T19:43:13.316Z",
                   "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 77708,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T22:45:19.681Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
+                  "attachments": []
                 }
               ],
-              "id": "585384b9c1b980d73c52-14b333cdd49055e86eb7",
-              "file": "saucedemo/checkout-flow.spec.ts",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "should complete checkout with random user info",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 0,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 221272,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T22:46:38.017Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "585384b9c1b980d73c52-d1f83f2ef2096efc21be",
-              "file": "saucedemo/checkout-flow.spec.ts",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "should complete checkout with random user info",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 0,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3532,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T22:50:20.118Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "585384b9c1b980d73c52-42ce39348f409326a726",
-              "file": "saucedemo/checkout-flow.spec.ts",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "should complete checkout with random user info",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 0,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 10972,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T22:50:24.128Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "585384b9c1b980d73c52-087b1e39cba91fd8e8af",
-              "file": "saucedemo/checkout-flow.spec.ts",
-              "line": 10,
-              "column": 9
-            },
-            {
-              "title": "should complete checkout with random user info",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 0,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Safari",
-                  "projectName": "Mobile Safari",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 0,
-                      "status": "interrupted",
-                      "duration": 3828,
-                      "error": {
-                        "message": "Error: browserContext.close: Target page, context or browser has been closed",
-                        "stack": "Error: browserContext.close: Target page, context or browser has been closed"
-                      },
-                      "errors": [
-                        {
-                          "message": "Error: browserContext.close: Target page, context or browser has been closed"
-                        },
-                        {
-                          "location": {
-                            "file": "/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/page-objects/shared/BasePage.ts",
-                            "column": 25,
-                            "line": 8
-                          },
-                          "message": "Error: page.goto: Target page, context or browser has been closed\n\n\u001b[90m   at \u001b[39m../page-objects/shared/BasePage.ts:8\n\n\u001b[0m \u001b[90m  6 |\u001b[39m     }\n \u001b[90m  7 |\u001b[39m     \u001b[36masync\u001b[39m goto(path\u001b[33m:\u001b[39m string \u001b[33m=\u001b[39m \u001b[32m\"\"\u001b[39m) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mBASE_URL\u001b[39m \u001b[33m+\u001b[39m path)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m     \u001b[36masync\u001b[39m getTitle()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mstring\u001b[39m\u001b[33m>\u001b[39m {\n \u001b[90m 11 |\u001b[39m         \u001b[36mreturn\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mtitle()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.goto (/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/page-objects/shared/BasePage.ts:8:25)\u001b[22m\n\u001b[2m    at LoginPage.goto (/Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/page-objects/saucedemo/LoginPage.ts:21:17)\u001b[22m\n\u001b[2m    at /Users/yahyayusifli/Documents/QA/05_PLAYWRIGHT/playwright-practice/my-first-playwright-project/tests/saucedemo/checkout-flow.spec.ts:19:25\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-12-16T22:50:35.658Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "skipped"
-                }
-              ],
-              "id": "585384b9c1b980d73c52-ec7b263749bc5cb6c094",
-              "file": "saucedemo/checkout-flow.spec.ts",
-              "line": 10,
-              "column": 9
+              "status": "expected"
             }
-          ]
+          ],
+          "id": "05d7f4b25e47d18e8e0a-484cc78a747f9d329f3e",
+          "file": "saucedemo/auth-fixtures-test.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "add product with login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 1029,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-17T19:43:13.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05d7f4b25e47d18e8e0a-eb6c7867bcad33003721",
+          "file": "saucedemo/auth-fixtures-test.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "add product with login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 775,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-17T19:43:13.321Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05d7f4b25e47d18e8e0a-97ef0bbea32de488783a",
+          "file": "saucedemo/auth-fixtures-test.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "add product with login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Chrome",
+              "projectName": "Mobile Chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 972,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-17T19:43:13.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05d7f4b25e47d18e8e0a-9a55e483714724ce1294",
+          "file": "saucedemo/auth-fixtures-test.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "add product with login",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "Mobile Safari",
+              "projectName": "Mobile Safari",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 779,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-12-17T19:43:13.319Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "05d7f4b25e47d18e8e0a-77410d6130649ae5d5f3",
+          "file": "saucedemo/auth-fixtures-test.spec.ts",
+          "line": 4,
+          "column": 5
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-12-16T22:45:19.316Z",
-    "duration": 320301.11600000004,
-    "expected": 4,
-    "skipped": 1,
+    "startTime": "2025-12-17T19:43:13.002Z",
+    "duration": 2404.081,
+    "expected": 5,
+    "skipped": 0,
     "unexpected": 0,
     "flaky": 0
   }

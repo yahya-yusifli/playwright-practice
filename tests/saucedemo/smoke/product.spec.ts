@@ -1,7 +1,8 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../page-objects/saucedemo/LoginPage';
-import { ProductsPage } from '../../page-objects/saucedemo/ProductsPage';
-import { SortOption } from '../../utils/saucedemo-data';
+import { LoginPage } from '../../../page-objects/saucedemo/LoginPage';
+import { ProductsPage } from '../../../page-objects/saucedemo/ProductsPage';
+import { SortOption } from '../../../utils/saucedemo-data';
+
 
 test.describe('SauceDemo Products Test', () => {
 
@@ -39,7 +40,7 @@ test.describe('SauceDemo Products Test', () => {
         expect(cartCount).toBe('2');
     });
 
-    test('can remove product from cart', async ({ page }) => {
+    test('can remove product from cart @smoke', async ({ page }) => {
         const productPage = new ProductsPage(page);
 
         await productPage.addProductToCartByName('Sauce Labs Backpack');

@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../page-objects/saucedemo/LoginPage';
-import { ProductsPage } from '../../page-objects/saucedemo/ProductsPage';
-import { CartPage } from '../../page-objects/saucedemo/CartPage';
-import { CheckoutPage } from '../../page-objects/saucedemo/CheckoutPage';
+import { LoginPage } from '../../../page-objects/saucedemo/LoginPage';
+import { ProductsPage } from '../../../page-objects/saucedemo/ProductsPage';
+import { CartPage } from '../../../page-objects/saucedemo/CartPage';
+import { CheckoutPage } from '../../../page-objects/saucedemo/CheckoutPage';
 import { faker } from '@faker-js/faker';
 
-test.describe('SauceDemo Checkout Flow (Faker Data)', () => {
+test.describe('SauceDemo Checkout Flow (Faker Data) @regression', () => {
 
     test('should complete checkout with random user info', async ({ page }) => {
 
